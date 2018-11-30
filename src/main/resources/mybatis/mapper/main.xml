@@ -2,6 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="main">
+	<!-- 조건식에서 equals 쓰면 안 됨  -->
 	<select id="selectEmpList" 
 			parameterType="HashMap"
 			resultType="HashMap">
@@ -35,6 +36,7 @@
 								from employees
 								where 1=1
 								<if test="null != keyword and '' != keyword">
+								
 								and first_name LIKE '%' || #{keyword} || '%' 
 								</if>
 								
