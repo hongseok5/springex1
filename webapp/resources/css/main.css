@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.pageTitle{ align : center; }
+tr.tb_header td{ text-align : center;}	/* 태그와 클래스/아이디명은 붙여서 쓴다. */
+div.searchWrap { padding-left: 20px; }
+div.tableArea { padding-left: 20px;
+				padding-top: 20px;
+									}
+table.myTable { padding-left: 20px;
+				padding-top: 20px;
+									}
+									
+table.myTable td{ padding-left: 10px; padding-right: 10px;}
